@@ -3,15 +3,15 @@ return {
       "williamboman/mason.nvim",
       config = function()
          require("mason").setup()
-      end
+      end,
    },
    {
       "williamboman/mason-lspconfig.nvim",
       config = function()
          require("mason-lspconfig").setup({
-            ensure_installed = { "lua_ls", "clangd", "asm_lsp" }
+            ensure_installed = { "lua_ls", "clangd", "asm_lsp" },
          })
-      end
+      end,
    },
    {
       "neovim/nvim-lspconfig",
